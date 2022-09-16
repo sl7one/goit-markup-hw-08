@@ -1,0 +1,51 @@
+.works__title {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+
+  letter-spacing: 0.03em;
+
+  color: var(--primiry);
+}
+
+.works__list {
+  display: flex;
+  gap: 30px;
+}
+
+.works__item {
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.sticker__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  padding: 27px 0;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white);
+
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.sticker__overlay {
+  position: relative;
+  z-index: -1;
+}

@@ -1,0 +1,20 @@
+@import './mixin/animation';
+@import './mixin/_box-shadow';
+@import './base/var.scss';
+@import './base/reset.scss';
+@import './base/wrappers';
+@import './base/social-link';
+
+@import './modify/visually-hidden';
+
+@import './components/studia/header';
+@import './components/studia/effective-solution';
+@import './components/studia/effective-solutions__form';
+@import './components/studia/benefits';
+@import './components/studia/works';
+@import './components/studia/command';
+@import './components/studia/clients';
+@import './components/studia/footer';
+
+@import './components/portfolio/radio-buttons';
+@import './components/portfolio/portfolio-card';

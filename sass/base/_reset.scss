@@ -1,0 +1,36 @@
+body {
+  background-color: var(--white);
+  color: var(--primiry);
+  font-family: roboto, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  display: block;
+}
+
+address {
+  font-style: normal;
+}

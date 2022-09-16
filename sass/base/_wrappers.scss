@@ -1,0 +1,35 @@
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &.section--drop-padding {
+    padding-bottom: 0px;
+  }
+
+  &.section--color {
+    background-color: var(--secondary-main-color);
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.wrapper {
+  &.wrapper--footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0;
+  }
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
