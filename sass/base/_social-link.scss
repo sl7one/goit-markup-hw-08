@@ -17,6 +17,7 @@
   border-radius: 50%;
 
   transition: background-color;
+  @include animation;
 
   &:hover {
     background-color: var(--acent);

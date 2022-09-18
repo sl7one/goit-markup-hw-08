@@ -1,44 +1,62 @@
-.command__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
+.command {
+  &--color {
+    background-color: var(--secondary-main-color);
+  }
 
-  color: var(--primiry);
-}
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    letter-spacing: 0.03em;
 
-.command__list {
-  display: flex;
-  text-align: center;
-  gap: 30px;
-}
+    color: var(--primiry);
+    margin-bottom: 50px;
+    text-align: center;
+  }
 
-.command__card {
-  width: 270px;
-  @include shadow__card;
-  border-radius: 0px 0px 4px 4px;
-  background-color: var(--white);
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 30px;
+  }
 
-.command__meta {
-  padding: 30px 32px;
-}
+  &__item {
+    width: 450px;
 
-.command__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
+    @include shadow__card;
+    border-radius: 0px 0px 4px 4px;
+    background-color: var(--white);
 
-  color: var(--primiry);
-}
+    @include tablet {
+      max-width: calc((100% - 30px) / 2);
+    }
 
-.command__prof {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  letter-spacing: 0.03em;
+    @include desktop {
+      max-width: calc((100% - 90px) / 4);
+    }
+  }
 
-  color: var(--secondary);
-  margin-top: 10px;
+  &__meta {
+    padding: 30px 32px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+
+    color: var(--primiry);
+  }
+
+  &__prof {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+
+    color: var(--secondary);
+    margin-top: 10px;
+  }
 }

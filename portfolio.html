@@ -20,43 +20,45 @@
 
   <body>
     <header class="header">
-      <div class="container header__items">
-        <a class="logo" href="index.html"> <span class="logo__part">Web</span>Studio</a>
-        <nav>
-          <ul class="nav-menu">
-            <li class="nav-menu__item">
-              <a class="nav-menu__link" href="./index.html">Студія</a>
-            </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link nav-menu__link--current" href="./portfolio.html"
-                >Портфоліо</a
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a class="logo" href="index.html"> <span class="logo__left">Web</span>Studio</a>
+          </div>
+          <nav clas="nav">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="./index.html">Студія</a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link current" href="./portfolio.html">Портфоліо</a>
+              </li>
+              <li class="nav-menu__item">
+                <a class="nav-menu__link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="nav-contacts__list">
+            <li class="nav-contacts__item">
+              <a class="nav-contacts__link" href="mailto:info@devstudio.com">
+                <svg class="nav-contacts__icon" width="16" height="12">
+                  <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
+                </svg>
+
+                info@devstudio.com</a
               >
             </li>
-            <li class="nav-menu__item">
-              <a class="nav-menu__link" href="">Контакти</a>
+            <li class="nav-contacts__item">
+              <a class="nav-contacts__link" href="tel:+380961111111">
+                <svg class="nav-contacts__icon" width="10" height="16">
+                  <use href="./images/icons/symbol-defs.svg#icon-mobile"></use>
+                </svg>
+
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="nav-contacts">
-          <li class="nav-contacts__item">
-            <a class="nav-contacts__link" href="mailto:info@devstudio.com">
-              <svg class="nav-contacts__icon" width="16" height="12">
-                <use href="./images/icons/symbol-defs.svg#icon-mail"></use>
-              </svg>
-
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="nav-contacts__item">
-            <a class="nav-contacts__link" href="tel:+380961111111">
-              <svg class="nav-contacts__icon" width="10" height="16">
-                <use href="./images/icons/symbol-defs.svg#icon-mobile"></use>
-              </svg>
-
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
 
@@ -263,16 +265,16 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="wrapper wrapper--footer">
-          <div class="logo-block">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
             <a class="logo logo--color" href="index.html">
-              <span class="logo__part">Web</span>Studio</a
+              <span class="logo__left">Web</span>Studio</a
             >
-            <address>
-              <ul class="footer-adress">
-                <li class="footer-adress__list">
+            <address class="adress">
+              <ul class="adress__list">
+                <li class="adress__item">
                   <a
-                    class="footer-adress__link"
+                    class="adress__link"
                     href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -280,13 +282,11 @@
                     м. Київ, пр-т Лесі Українки, 26
                   </a>
                 </li>
-                <li class="footer-adress__list">
-                  <a class="footer-adress__link" href="mailto:info@devstudio.com"
-                    >info@devstudio.com</a
-                  >
+                <li class="adress__item">
+                  <a class="adress__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-                <li class="footer-adress__list">
-                  <a class="footer-adress__link" href="tel:+380961111111">+38 096 111 11 11 </a>
+                <li class="adress__item">
+                  <a class="adress__link" href="tel:+380961111111">+38 096 111 11 11 </a>
                 </li>
               </ul>
             </address>
@@ -329,9 +329,9 @@
           <div class="subscribe">
             <b class="subscribe__title">Підпишіться на розсилку</b>
             <form>
-              <div class="subscribe-form">
+              <div class="form">
                 <input
-                  class="subscribe-form__input"
+                  class="form__input"
                   type="email"
                   name="subscribe"
                   placeholder="E-mail"
@@ -340,7 +340,7 @@
 
                 <button class="subscribe__button" type="submit">
                   Підписатися
-                  <svg class="subscibe__icon" width="24" height="24">
+                  <svg class="subscribe__icon" width="24" height="24">
                     <use href="./images/icons/symbol-defs.svg#icon-send"></use>
                   </svg>
                 </button>

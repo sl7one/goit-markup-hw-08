@@ -1,15 +1,16 @@
-@import './mixin/animation';
-@import './mixin/_box-shadow';
+@import './utils/animation';
+@import './utils/box-shadow';
+@import './utils/visually-hidden';
+@import './utils/media';
+
 @import './base/var.scss';
 @import './base/reset.scss';
-@import './base/wrappers';
+@import './base/container';
 @import './base/social-link';
 
-@import './modify/visually-hidden';
-
 @import './components/studia/header';
-@import './components/studia/effective-solution';
-@import './components/studia/effective-solutions__form';
+@import './components/studia/hero';
+@import './components/studia/hero__input-form';
 @import './components/studia/benefits';
 @import './components/studia/works';
 @import './components/studia/command';
