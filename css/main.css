@@ -571,6 +571,9 @@ address {
   margin-top: 10px;
 }
 
+.works {
+  display: none;
+}
 .works__title {
   display: block;
   font-weight: 700;
@@ -672,6 +675,7 @@ address {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .clients__item {
