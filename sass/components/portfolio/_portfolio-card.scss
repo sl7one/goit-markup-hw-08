@@ -91,4 +91,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  min-width: 450px;
+
+  @include tablet {
+    min-width: calc((100% - 30px) / 2);
+  }
+
+  @include desktop {
+    min-width: calc((100% - 60px) / 3);
+  }
 }
