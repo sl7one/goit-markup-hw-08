@@ -15,19 +15,6 @@
   color: var(--primary);
 }
 
-.portfolio-card__meta {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-
-  padding: 20px 24px;
-
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-}
-
 .object-img__text {
   font-weight: 400;
   font-size: 18px;
@@ -58,47 +45,63 @@
   @include animation;
 }
 
-.portfolio-card__object-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-card__link {
-  display: block;
-  width: 370px;
-  background: var(--white);
-
-  transition: box-shadow;
-  @include animation;
-
-  &:hover {
-    @include box-shadow__portfolio-card;
-
-    & .object-img {
-      transform: translatey(0);
-    }
-  }
-  &:focus {
-    @include box-shadow__portfolio-card;
-
-    & .object-img {
-      transform: translatey(0);
-    }
-  }
-}
-
 .portfolio-card {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  &__item {
+    width: 450px;
+    @include tablet {
+      // width: calc((100% - 30px) / 2);
+      width: 354px;
+    }
 
-  min-width: 450px;
+    @include desktop {
+      // min-width: calc((100% - 60px) / 3);
+      width: 370px;
+    }
+  }
+  &__link {
+    display: block;
+    width: 370px;
+    background: var(--white);
 
-  @include tablet {
-    min-width: calc((100% - 30px) / 2);
+    transition: box-shadow;
+    @include animation;
+
+    &:hover {
+      @include box-shadow__portfolio-card;
+
+      & .object-img {
+        transform: translatey(0);
+      }
+    }
+    &:focus {
+      @include box-shadow__portfolio-card;
+
+      & .object-img {
+        transform: translatey(0);
+      }
+    }
   }
 
-  @include desktop {
-    min-width: calc((100% - 60px) / 3);
+  &__object-img {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__meta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    padding: 20px 24px;
+
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
   }
 }
