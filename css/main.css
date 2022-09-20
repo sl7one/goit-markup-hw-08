@@ -1217,20 +1217,22 @@ address {
 
 .portfolio-card__list {
   display: flex;
+  justify-content: space-between;
+  align-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
 .portfolio-card__item {
-  width: 450px;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .portfolio-card__item {
-    width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .portfolio-card__item {
-    width: 370px;
+    width: calc((100% - 60px) / 3);
   }
 }
 .portfolio-card__link {
