@@ -1,18 +1,28 @@
 .hero {
+  margin: 0px auto;
   display: flex;
-
   align-items: center;
-
   background-color: #2f303a;
-  // height: 400px;
-  max-width: 100%;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Img.jpg');
-
   background-size: cover;
   background-repeat: no-repeat;
+  background-image: var(--gradient), url('/images/Header-mob.jpg');
+  @include retina {
+    background-image: var(--gradient), url('/images/Header-mob-2x.jpg');
+  }
 
-  margin: 0px auto;
+  @include tablet {
+    background-image: var(--gradient), url('/images/Header-tab.jpg');
+    @include retina {
+      background-image: var(--gradient), url('/images/Header-tab-2x.jpg');
+    }
+  }
+
+  @include desktop {
+    background-image: var(--gradient), url('/images/Header-desk.jpg');
+    @include retina {
+      background-image: var(--gradient), url('/images/Header-desk-2x.jpg');
+    }
+  }
 
   &__title {
     text-transform: uppercase;

@@ -19,6 +19,7 @@
   --secondary-main-color: #f5f4fa;
   --icon-primiry-fill: #afb1b8;
   --header-underline: #ececec;
+  --gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 body {
@@ -54,7 +55,7 @@ span {
 img {
   display: block;
   height: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 address {
@@ -485,14 +486,38 @@ address {
 
 /*------------------------------*/
 .hero {
+  margin: 0px auto;
   display: flex;
   align-items: center;
   background-color: #2f303a;
-  max-width: 100%;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 0px auto;
+  background-image: var(--gradient), url("/images/Header-mob.jpg");
+}
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url("/images/Header-mob-2x.jpg");
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: var(--gradient), url("/images/Header-tab.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url("/images/Header-tab-2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: var(--gradient), url("/images/Header-desk.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gradient), url("/images/Header-desk-2x.jpg");
+  }
 }
 .hero__title {
   text-transform: uppercase;
@@ -536,9 +561,15 @@ address {
   padding: 40px;
   background: var(--white);
   transform: translate(-50%, -50%);
+  width: 450px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 1200px) {
+  .modal-object {
+    width: 528px;
+  }
 }
 
 .backdrop {
@@ -590,7 +621,6 @@ address {
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 20px;
 }
 
@@ -654,7 +684,7 @@ address {
 
 .modal-form__textarea {
   resize: none;
-  width: 448px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -662,6 +692,11 @@ address {
   transition: border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__textarea {
+    width: 448px;
+  }
 }
 .modal-form__textarea:hover {
   border-color: #2196f3;
@@ -691,10 +726,16 @@ address {
   flex-direction: row;
   align-items: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--secondary);
+}
+@media screen and (min-width: 1200px) {
+  .modal-policy__text {
+    font-size: 14px;
+    line-height: 2;
+  }
 }
 .modal-policy__text:hover .modal-policy__link::after {
   width: 100%;
@@ -724,6 +765,21 @@ address {
 }
 .modal-policy__link:focus::after {
   width: 100%;
+}
+
+.modal-policy__button {
+  color: var(--white);
+  background-color: var(--acent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  transition: background-color, box-shadow;
+}
+.modal-policy__button__hover,
+.modal-policy__button :focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal-policy__icon-object {
@@ -814,6 +870,11 @@ address {
 
 .works {
   display: none;
+}
+@media screen and (min-width: 1200px) {
+  .works {
+    display: flex;
+  }
 }
 .works__title {
   display: block;
@@ -1233,12 +1294,12 @@ address {
 .portfolio-card__list {
   display: flex;
   justify-content: space-between;
-  align-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
 }
 .portfolio-card__item {
-  width: 100%;
+  height: 440px;
+  min-width: 354px;
 }
 @media screen and (min-width: 480px) {
   .portfolio-card__item {
@@ -1276,10 +1337,14 @@ address {
 .portfolio-card__meta {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 4px;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-card {
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */

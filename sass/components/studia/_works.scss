@@ -1,6 +1,10 @@
 .works {
   display: none;
 
+  @include desktop {
+    display: flex;
+  }
+
   &__title {
     display: block;
     font-weight: 700;

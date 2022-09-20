@@ -226,7 +226,7 @@
                       >Умови договору</a
                     ></label
                   >
-                  <button class="btn-style" type="submit">Відправити</button>
+                  <button class="modal-policy__button" type="submit">Відправити</button>
                 </div>
               </form>
             </div>
@@ -297,7 +297,12 @@
             <li class="works__item">
               <div class="sticker">
                 <div class="sticker__overlay">
-                  <img src="./images/work-1.jpg" alt="picture pc" height="294" width="370" />
+                  <img
+                    srcset="./images/work1-desk.jpg 1x, ./images/work1-desk@2х.jpg 2x"
+                    src="./images/work1-desk.jpg"
+                    alt="picture tablet"
+                  />
+
                   <p class="sticker__text">Десктопні додатки</p>
                 </div>
               </div>
@@ -306,7 +311,11 @@
               <div class="sticker__overlay">
                 <div class="sticker">
                   <div class="sticker__overlay">
-                    <img src="./images/work-2.jpg" alt="picture mobile" height="294" width="370" />
+                    <img
+                      srcset="./images/work2-desk.jpg 1x, ./images/work2-desk@2х.jpg 2x"
+                      src="./images/work2-desk.jpg"
+                      alt="picture tablet"
+                    />
                     <p class="sticker__text">Мобільні додатки</p>
                   </div>
                 </div>
@@ -316,7 +325,11 @@
               <div class="sticker__overlay">
                 <div class="sticker">
                   <div class="sticker__overlay">
-                    <img src="./images/work-3.jpg" alt="picture tablet" height="294" width="370" />
+                    <img
+                      srcset="./images/work3-desk.jpg 1x, ./images/work1-desk@3х.jpg 2x"
+                      src="./images/work3-desk.jpg"
+                      alt="picture tablet"
+                    />
                     <p class="sticker__text">Дизайнерські рішення</p>
                   </div>
                 </div>
@@ -333,7 +346,27 @@
           <h2 class="command__title">Наша команда</h2>
           <ul class="command__list">
             <li class="command__item">
-              <img src="./images/command1.jpg" alt="Igor photo" width="270" />
+              <picture>
+                <source
+                  srcset="./images/img-desk.jpg 1x, ./images/img-desk@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img-tab.jpg 1x, ./images/img-tab@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img-mob.jpg 1x, ./images/img-mob@2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  srcset="./images/img-mob.jpg 1x, ./images/img-mob@2x.jpg 2x"
+                  src="./images/img-mob.jpg"
+                  alt="photo"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__name">Ігор Дем'яненко</h3>
                 <p class="command__prof">Product Designer</p>
@@ -370,7 +403,27 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/command2.jpg" alt="Olga photo" width="270" />
+              <picture>
+                <source
+                  srcset="./images/img2-desk.jpg 1x, ./images/img2-desk@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img2-tab.jpg 1x, ./images/img2-tab@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img2-mob.jpg 1x, ./images/img2-mob@2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  srcset="./images/img2-mob.jpg 1x, ./images/img2-mob@2x.jpg 2x"
+                  src="./images/img2-mob.jpg"
+                  alt="photo"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__name">Ольга Рєпіна</h3>
                 <p class="command__prof">Frontend Developer</p>
@@ -407,7 +460,27 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/command3.jpg" alt="Mikola photo" width="270" />
+              <picture>
+                <source
+                  srcset="./images/img3-desk.jpg 1x, ./images/img3-desk@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img3-tab.jpg 1x, ./images/img3-tab@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img3-mob.jpg 1x, ./images/img3-mob@2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  srcset="./images/img3-mob.jpg 1x, ./images/img3-mob@2x.jpg 2x"
+                  src="./images/img3-mob.jpg"
+                  alt="photo"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__name">Микола Тарасов</h3>
                 <p class="command__prof">Marketing</p>
@@ -444,7 +517,27 @@
               </div>
             </li>
             <li class="command__item">
-              <img src="./images/command4.jpg" alt="Igor photo" width="270" />
+              <picture>
+                <source
+                  srcset="./images/img4-desk.jpg 1x, ./images/img4-desk@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img4-tab.jpg 1x, ./images/img4-tab@2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="./images/img4-tab.jpg 1x, ./images/img4-tab@2x.jpg 2x"
+                  media="(min-width:480px)"
+                />
+
+                <img
+                  srcset="./images/img4-mob.jpg 1x, ./images/img4-mob@2x.jpg 2x"
+                  src="./images/img4-mob.jpg"
+                  alt="photo"
+                />
+              </picture>
+
               <div class="command__meta">
                 <h3 class="command__name">Михайло Єрмаков</h3>
                 <p class="command__prof">UI Designer</p>
@@ -626,15 +719,9 @@
     </footer>
   </body>
 
-  <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-
   <script src="./js/modal.js"></script>
   <script src="./js/menu.js"></script>
+  <script defer src="./js/mobile-menu.js"></script>
 
   <script src="./js/scr-for-check-send-form-in-devtools.js"></script>
 </html>

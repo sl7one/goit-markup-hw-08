@@ -11,6 +11,11 @@
 
   transform: translate(-50%, -50%);
 
+  width: 450px;
+  @include desktop {
+    width: 528px;
+  }
+
   @include animation;
 
   @include shadow__card;
@@ -69,7 +74,6 @@
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 20px;
 }
 
@@ -140,7 +144,7 @@
 
 .modal-form__textarea {
   resize: none;
-  width: 448px;
+  width: 100%;
   height: 120px;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -149,6 +153,10 @@
   transition: border;
 
   @include animation;
+
+  @include desktop {
+    width: 448px;
+  }
 
   &:hover {
     border-color: #2196f3;
@@ -182,11 +190,16 @@
   align-items: center;
 
   font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 12);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
 
   color: var(--secondary);
+
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(24 / 12);
+  }
 
   &:hover .modal-policy__link::after {
     width: 100%;
@@ -224,6 +237,22 @@
     &::after {
       width: 100%;
     }
+  }
+}
+
+.modal-policy__button {
+  color: var(--white);
+  background-color: var(--acent);
+  @include shadow__button;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+
+  transition: background-color, box-shadow;
+  &__hover,
+  :focus {
+    background-color: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 }
 
