@@ -20,7 +20,13 @@
 
   <body>
     <header class="header">
-      <div class="header__modal">
+      <div class="head-mob__modal">
+        <button class="menu-button-close" type="button">
+          <svg class="menu-button-close__icon">
+            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+
         <div class="container">
           <div class="mob-wrapper">
             <nav>
@@ -64,25 +70,16 @@
             </div>
           </div>
         </div>
-        <button class="header-button" type="button">
-          <svg class="header-button__close">
-            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-          </svg>
-        </button>
       </div>
 
-      <div class="container">
-        <div class="header__wrapper">
+      <div class="head-tab-desk">
+        <div class="container">
           <div class="header__logo">
             <div class="header__top">
               <a class="logo" href="index.html"> <span class="logo__left">Web</span>Studio</a>
-              <button class="header__button" type="button">
-                <svg class="header__icon">
-                  <use href="./images/icons/symbol-defs.svg#menu"></use>
-                </svg>
-              </button>
             </div>
           </div>
+
           <nav clas="nav">
             <ul class="nav__list">
               <li class="nav__item">
@@ -123,7 +120,7 @@
     <main>
       <!--EFFECTIVE-SOLUTIONS--------------------------------->
 
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <h1 class="hero__title">Ефективні рішення для <br />вашого бізнесу</h1>
           <button class="hero__button" data-modal-open autofocus type="button">
@@ -223,11 +220,11 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!--BENEFITS----------------------------------------------->
 
-      <!-- <section class="benefits section benefits--drop-padding">
+      <section class="benefits section benefits--drop-padding">
         <div class="container">
           <h2 class="visually-hidden">Переваги</h2>
           <ul class="benefits__list">
@@ -277,11 +274,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--WORKS------------------------------------------------->
 
-      <!-- <section class="works section">
+      <section class="works section">
         <div class="container">
           <h2 class="works__title">Чим ми займаємося</h2>
           <ul class="works__list">
@@ -315,11 +312,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--COMMAND-------------------------------------------------->
 
-      <!-- <section class="command section command--color">
+      <section class="command section command--color">
         <div class="container">
           <h2 class="command__title">Наша команда</h2>
           <ul class="command__list">
@@ -473,11 +470,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--CLIENTS---------------------------------------------------->
 
-      <!-- <section class="clients section">
+      <section class="clients section">
         <div class="container">
           <h2 class="clients__title">Постійні клієнти</h2>
           <ul class="clients__list">
@@ -525,10 +522,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__logo">
@@ -614,7 +611,7 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
   </body>
 
   <script src="./js/modal.js"></script>
