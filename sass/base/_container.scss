@@ -6,23 +6,21 @@
 
   @include tablet {
     max-width: 768px;
-    background-color: royalblue;
   }
 
   @include desktop {
     max-width: 1200px;
-    background-color: blueviolet;
   }
 }
 
 .section {
   padding: 60px 0;
 
-  @include tablet {
-    background-color: rgb(13, 25, 63);
-  }
+  // @include tablet {
+  //   background-color: rgb(13, 25, 63);
+  // }
 
-  @include desktop {
-    background-color: rgb(56, 56, 12);
-  }
+  // @include desktop {
+  //   background-color: rgb(56, 56, 12);
+  // }
 }

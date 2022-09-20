@@ -70,28 +70,16 @@ address {
 @media screen and (min-width: 480px) {
   .container {
     max-width: 768px;
-    background-color: royalblue;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    background-color: blueviolet;
   }
 }
 
 .section {
   padding: 60px 0;
-}
-@media screen and (min-width: 480px) {
-  .section {
-    background-color: rgb(13, 25, 63);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section {
-    background-color: rgb(56, 56, 12);
-  }
 }
 
 .social-networks {
@@ -1049,7 +1037,7 @@ address {
   gap: 20px;
   justify-content: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1200px) {
   .subscribe {
     margin-left: 94px;
   }
