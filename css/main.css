@@ -62,19 +62,19 @@ address {
 }
 
 .container {
-  max-width: 100%;
+  width: 480px;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -217,7 +217,6 @@ address {
   height: 100vh;
   background-color: var(--white);
   padding: 48px 40px;
-  opacity: 0.3;
 }
 .head-mob__modal > .container {
   height: 100%;
@@ -228,6 +227,11 @@ address {
   .head-mob__modal {
     display: none;
   }
+}
+.head-mob__modal.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .menu-button-close {
@@ -356,6 +360,11 @@ address {
   align-items: center;
   gap: 30px;
 }
+@media screen and (min-width: 480px) {
+  .head-tab-desk > .container {
+    display: flex;
+  }
+}
 @media screen and (min-width: 1200px) {
   .head-tab-desk > .container {
     justify-content: unset;
@@ -363,11 +372,6 @@ address {
 }
 .head-tab-desk > .container > .header__logo {
   width: auto;
-}
-@media screen and (min-width: 480px) {
-  .head-tab-desk > .container {
-    display: flex;
-  }
 }
 
 .nav__list {
@@ -459,6 +463,9 @@ address {
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: var(--secondary);
+  transition: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
   .nav-contacts__link {
@@ -863,7 +870,7 @@ address {
   gap: 30px;
 }
 .command__item {
-  width: 450px;
+  width: 100%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
@@ -1011,8 +1018,16 @@ address {
 .adress__link:focus {
   color: var(--acent);
 }
+.adress__link:hover,
+.adress .white:hover {
+  color: var(--acent);
+}
+.adress__link:focus,
+.adress .white:focus {
+  color: var(--acent);
+}
 
-.adress__item:first-child .adress__link {
+.white {
   color: var(--white);
 }
 
@@ -1237,7 +1252,6 @@ address {
 }
 .portfolio-card__link {
   display: block;
-  width: 370px;
   background: var(--white);
   transition: box-shadow;
   transition-duration: 250ms;

@@ -60,9 +60,20 @@
       color: var(--acent);
     }
   }
+
+  &__link,
+  .white {
+    &:hover {
+      color: var(--acent);
+    }
+
+    &:focus {
+      color: var(--acent);
+    }
+  }
 }
 
-.adress__item:first-child .adress__link {
+.white {
   color: var(--white);
 }
 
