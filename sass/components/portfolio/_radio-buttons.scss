@@ -1,8 +1,26 @@
 .radio {
   display: flex;
-  justify-content: center;
-  column-gap: 8px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  &__item:nth-child(3) {
+    flex-basis: 125px;
+
+    @include tablet {
+      flex-basis: auto;
+    }
+  }
+
+  @include tablet {
+    justify-content: center;
+  }
 
   &__button {
     color: var(--primiry);
@@ -11,6 +29,8 @@
     letter-spacing: 0.03em;
     padding: 6px 22px;
     border-radius: 4px;
+    height: 38px;
+    min-width: 74px;
 
     background-color: var(--secondary-main-color);
 
