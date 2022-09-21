@@ -277,6 +277,9 @@ address {
 .mob-nav__link:hover, .mob-nav__link:focus {
   color: var(--acent);
 }
+.mob-nav__link.current {
+  color: var(--acent);
+}
 .mob-nav__list {
   display: flex;
   flex-direction: column;

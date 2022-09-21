@@ -144,6 +144,9 @@
     &:focus {
       color: var(--acent);
     }
+    &.current {
+      color: var(--acent);
+    }
   }
 
   &__list {
