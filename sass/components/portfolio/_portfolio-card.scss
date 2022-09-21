@@ -48,22 +48,19 @@
 .portfolio-card {
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }
   &__item {
-    height: 440px;
     min-width: 354px;
 
     @include tablet {
       width: calc((100% - 30px) / 2);
-      // width: 354px;
     }
 
     @include desktop {
       width: calc((100% - 60px) / 3);
-      // width: 370px;
     }
   }
   &__link {

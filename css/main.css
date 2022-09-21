@@ -63,19 +63,19 @@ address {
 }
 
 .container {
-  width: 480px;
+  width: 100%;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1293,12 +1293,11 @@ address {
 
 .portfolio-card__list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
 }
 .portfolio-card__item {
-  height: 440px;
   min-width: 354px;
 }
 @media screen and (min-width: 480px) {
