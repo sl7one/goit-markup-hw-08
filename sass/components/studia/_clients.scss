@@ -18,18 +18,19 @@
   }
 
   &__item {
-    min-width: 226px;
+    width: 210px;
 
     @include tablet {
-      min-width: calc((100% - 30px) / 2);
+      width: calc((100% - 60px) / 3);
     }
 
     @include desktop {
-      min-width: calc((100% - 150px) / 6);
+      width: calc((100% - 150px) / 6);
     }
   }
 
   &__link {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
