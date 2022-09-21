@@ -497,34 +497,34 @@ address {
   background-color: #2f303a;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: var(--gradient), url("/images/Header-mob.jpg");
+  background-image: var(--gradient), url("../images/Header-mob.jpg");
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url("/images/Header-mob-2x.jpg");
+    background-image: var(--gradient), url("../images/Header-mob-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     height: 400px;
-    background-image: var(--gradient), url("/images/Header-tab.jpg");
+    background-image: var(--gradient), url("../images/Header-tab.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url("/images/Header-tab-2x.jpg");
+    background-image: var(--gradient), url("../images/Header-tab-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
     max-width: 1600px;
-    background-image: var(--gradient), url("/images/Header-desk.jpg");
+    background-image: var(--gradient), url("../images/Header-desk.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--gradient), url("/images/Header-desk-2x.jpg");
+    background-image: var(--gradient), url("../images/Header-desk-2x.jpg");
   }
 }
 .hero__title {

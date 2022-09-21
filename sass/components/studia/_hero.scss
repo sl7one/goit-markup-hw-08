@@ -5,25 +5,26 @@
   background-color: #2f303a;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: var(--gradient), url('/images/Header-mob.jpg');
+  background-image: var(--gradient), url('../images/Header-mob.jpg');
+
   @include retina {
-    background-image: var(--gradient), url('/images/Header-mob-2x.jpg');
+    background-image: var(--gradient), url('../images/Header-mob-2x.jpg');
   }
 
   @include tablet {
     height: 400px;
-    background-image: var(--gradient), url('/images/Header-tab.jpg');
+    background-image: var(--gradient), url('../images/Header-tab.jpg');
     @include retina {
-      background-image: var(--gradient), url('/images/Header-tab-2x.jpg');
+      background-image: var(--gradient), url('../images/Header-tab-2x.jpg');
     }
   }
 
   @include desktop {
     height: 600px;
     max-width: 1600px;
-    background-image: var(--gradient), url('/images/Header-desk.jpg');
+    background-image: var(--gradient), url('../images/Header-desk.jpg');
     @include retina {
-      background-image: var(--gradient), url('/images/Header-desk-2x.jpg');
+      background-image: var(--gradient), url('../images/Header-desk-2x.jpg');
     }
   }
 
