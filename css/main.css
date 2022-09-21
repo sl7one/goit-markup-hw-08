@@ -70,6 +70,11 @@ address {
 }
 @media screen and (min-width: 480px) {
   .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
     max-width: 768px;
   }
 }
@@ -147,12 +152,12 @@ address {
   background-color: transparent;
   display: block;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .header-mob__button {
     display: none;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .header-mob {
     display: none;
   }
@@ -166,7 +171,7 @@ address {
   height: 40px;
   fill: var(--primiry);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
@@ -205,7 +210,7 @@ address {
   flex-direction: column;
   gap: 64px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-wrapper {
     display: none;
   }
@@ -224,7 +229,7 @@ address {
   padding: 0;
   max-width: 480px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .head-mob__modal {
     display: none;
   }
@@ -242,7 +247,7 @@ address {
   background-color: transparent;
   margin-left: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .menu-button-close {
     display: none;
   }
@@ -278,7 +283,7 @@ address {
   gap: 32px;
   margin-bottom: 64px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-nav__list {
     display: none;
   }
@@ -304,7 +309,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--secondary);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-cont__link {
     display: none;
   }
@@ -314,7 +319,7 @@ address {
   flex-direction: column;
   gap: 32px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-cont__list {
     display: none;
   }
@@ -327,7 +332,7 @@ address {
   letter-spacing: 0.02em;
   color: var(--acent);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-soc__link {
     display: none;
   }
@@ -340,7 +345,7 @@ address {
   width: 1px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-soc__item:not(:first-child)::before {
     display: none;
   }
@@ -348,7 +353,7 @@ address {
 .mob-soc__list {
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .mob-soc__list {
     display: none;
   }
@@ -361,7 +366,7 @@ address {
   align-items: center;
   gap: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .head-tab-desk > .container {
     display: flex;
   }
@@ -381,7 +386,7 @@ address {
   flex-direction: row;
   gap: 50px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .nav__list {
     display: flex;
   }
@@ -411,7 +416,7 @@ address {
   color: var(--acent);
   fill: var(--acent);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .nav__link.current {
     position: relative;
   }
@@ -428,7 +433,7 @@ address {
     color: var(--acent);
   }
 }
-@media screen and (min-width: 480px) and (min-width: 480px) {
+@media screen and (min-width: 768px) and (min-width: 768px) {
   .nav__link.current::after {
     display: block;
   }
@@ -499,13 +504,13 @@ address {
     background-image: var(--gradient), url("/images/Header-mob-2x.jpg");
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero {
     height: 400px;
     background-image: var(--gradient), url("/images/Header-tab.jpg");
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: var(--gradient), url("/images/Header-tab-2x.jpg");
   }
@@ -829,7 +834,7 @@ address {
 .benefits__item {
   max-width: 450px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .benefits__item {
     max-width: calc((100% - 30px) / 2);
   }
@@ -939,7 +944,7 @@ address {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--white);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .command__item {
     max-width: calc((100% - 30px) / 2);
   }
@@ -986,7 +991,7 @@ address {
 .clients__item {
   min-width: 226px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .clients__item {
     min-width: calc((100% - 30px) / 2);
   }
@@ -1041,7 +1046,7 @@ address {
   text-align: center;
   gap: 60px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .footer__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -1050,7 +1055,7 @@ address {
     column-gap: 165px;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .footer__wrapper {
     row-gap: 0;
     column-gap: 0;
@@ -1144,7 +1149,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .subscribe__button {
     max-width: 200px;
   }
@@ -1157,7 +1162,7 @@ address {
   flex-wrap: wrap;
   gap: 20px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .subscribe__form {
     flex-direction: column;
   }
@@ -1181,7 +1186,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .subscribe__input {
     width: 450px;
   }
@@ -1220,7 +1225,7 @@ address {
   gap: 8px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .radio {
     margin-bottom: 40px;
   }
@@ -1228,12 +1233,12 @@ address {
 .radio__item:nth-child(3) {
   flex-basis: 125px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .radio__item:nth-child(3) {
     flex-basis: auto;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .radio {
     justify-content: center;
   }
@@ -1300,6 +1305,7 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
   transition: transform;
   transform: translatey(100%);
+  overflow: hidden;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1311,9 +1317,10 @@ address {
   gap: 30px;
 }
 .portfolio-card__item {
-  min-width: 354px;
+  width: 100%;
+  background-color: red;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-card__item {
     width: calc((100% - 30px) / 2);
   }
@@ -1324,7 +1331,9 @@ address {
   }
 }
 .portfolio-card__link {
-  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   transition: box-shadow;
   transition-duration: 250ms;
@@ -1347,15 +1356,17 @@ address {
   overflow: hidden;
 }
 .portfolio-card__meta {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   gap: 4px;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .portfolio-card {
     align-items: center;
   }
