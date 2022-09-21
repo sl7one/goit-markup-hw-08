@@ -55,26 +55,21 @@
     &:hover {
       color: var(--acent);
     }
-
     &:focus {
       color: var(--acent);
     }
-  }
 
-  &__link,
-  .white {
-    &:hover {
-      color: var(--acent);
+    &.white {
+      color: var(--white);
+      // &:hover {
+      //   color: var(--acent);
+      // }
+
+      // &:focus {
+      //   color: var(--acent);
+      // }
     }
-
-    &:focus {
-      color: var(--acent);
-    }
   }
-}
-
-.white {
-  color: var(--white);
 }
 
 .join-us {

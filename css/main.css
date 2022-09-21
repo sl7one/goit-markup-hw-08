@@ -1102,16 +1102,7 @@ address {
 .adress__link:focus {
   color: var(--acent);
 }
-.adress__link:hover,
-.adress .white:hover {
-  color: var(--acent);
-}
-.adress__link:focus,
-.adress .white:focus {
-  color: var(--acent);
-}
-
-.white {
+.adress__link.white {
   color: var(--white);
 }
 
